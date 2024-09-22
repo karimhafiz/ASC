@@ -1,0 +1,12 @@
+/* src/components/organisms/Footer/Footer.module.css */
+.footer {
+  background-color: #f8f9fa;
+  padding: 2rem 0;
+  text-align: center;
+  color: #6c757d;
+}
+
+.footerBottom {
+  padding: 1rem 0;
+  background-color: rgba(0, 0, 0, 0.05);
+}

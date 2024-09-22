@@ -1,0 +1,164 @@
+:root {
+  --primary-color: #2a2a72;
+  --secondary-color: #f0f348;
+  --text-color: #000000;
+  --menu-transition: 0.3s ease;
+  --menu-background: rgba(
+    42,
+    114,
+    72,
+    0.95
+  ); /* Adjust the alpha value for transparency */
+  --overlay-background: rgba(0, 0, 0, 0.5); /* Background for overlay */
+  --shadow-color: rgba(
+    0,
+    255,
+    0,
+    0.2
+  ); /* Thin and transparent green shadow color */
+  --hover-color: #1a1a1a; /* Hover color for nav links */
+  --font-family: "Poppins", sans-serif; /* Modern font */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+.logo {
+  width: 4.5rem; /* 50px */
+  height: auto;
+  margin-left: 2rem;
+}
+
+.navbar {
+  /* position: absolute; */
+  display: flex;
+  justify-content: space-between; /* Use space-between to separate logo and nav */
+  align-items: center;
+  padding: 1rem 2rem; /* Adjusted padding for better spacing */
+  background-color: #fff;
+  border-bottom: 1px solid #d2d2d2; /* This line creates the border at the bottom */
+  color: black;
+  width: 100%;
+  top: 0;
+  z-index: 10; /* Ensure the navbar is on top */
+  box-shadow: 0 2px 4px var(--shadow-color); /* Adding thin and transparent green shadow */
+}
+
+.nav {
+  display: flex;
+  gap: 6rem; /* Increase the gap for better spacing */
+  margin-left: auto; /* Align .nav to the left by using margin-left */
+  a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem; /* Slightly larger font size */
+    font-weight: 600; /* Medium weight for modern look */
+    transition: color var(--menu-transition), transform var(--menu-transition);
+  }
+
+  a:hover {
+    color: var(--hover-color);
+    transform: translateY(-2px); /* Subtle lift effect */
+    font-weight: 700;
+  }
+}
+
+/* .nav-link {
+} */
+
+.nav-link:hover {
+}
+
+button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+.nav-toggle-btn {
+  display: none;
+}
+
+@media (max-width: 820px) {
+  .nav {
+    display: flex;
+    gap: 2rem; /* Increase the gap for better spacing */
+  }
+  .nav-overlay {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Cover the entire viewport height */
+    background-color: white;
+    transition: opacity var(--menu-transition),
+      visibility var(--menu-transition);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9; /* Ensure overlay is below the nav */
+  }
+
+  .nav-open .nav-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 80%;
+    height: 100vh; /* Cover the entire viewport height */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--menu-transition),
+      opacity var(--menu-transition), visibility var(--menu-transition);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10; /* Ensure the nav is on top */
+  }
+
+  .nav-open {
+    max-height: 100vh; /* Ensure it expands to cover the viewport height */
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-link {
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem; /* Increase the size for better visibility */
+  }
+
+  .nav-toggle-btn {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 3rem;
+    font-size: 6rem;
+    z-index: 12; /* Ensure button is above the nav */
+  }
+
+  .nav-toggle-btn:hover {
+    background-color: #ff7979;
+  }
+
+  .menu-icon {
+    z-index: 13;
+    font-size: 2rem;
+  }
+}

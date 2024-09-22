@@ -1,0 +1,10 @@
+/* src/components/atoms/SocialIcon/SocialIcon.module.css */
+.socialIcon {
+  margin: 0 1rem;
+  color: #000;
+  text-decoration: none;
+}
+
+.socialIcon:hover {
+  color: #007bff;
+}

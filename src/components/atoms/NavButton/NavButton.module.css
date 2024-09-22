@@ -1,0 +1,7 @@
+/* src/components/atoms/NavButton/NavButton.module.css */
+.navButton {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}

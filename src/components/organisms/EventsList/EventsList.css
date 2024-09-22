@@ -1,0 +1,127 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.events {
+  margin: 2rem auto;
+  max-width: 50rem;
+  padding: 1rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.events-section {
+  margin-bottom: 3rem;
+}
+
+.events-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.subtitle {
+  font-size: 2rem;
+  color: #333;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.toggle-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.toggle-button:hover {
+  background-color: #0069d9;
+}
+
+.event-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.event-item {
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  margin-bottom: 1rem; /* Space between cards */
+}
+
+.event-item:hover {
+  transform: translateY(-5px);
+}
+
+.event-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.event-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.event-image-placeholder {
+  width: 100%;
+  height: 200px;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.event-info {
+  padding: 1rem;
+}
+
+.event-title {
+  font-size: 1.8rem;
+  color: #333;
+  margin: 0 0 0.5rem 0;
+}
+
+.event-date,
+.event-time,
+.event-location,
+.event-description,
+.event-price,
+.event-age-restriction,
+.event-accessibility {
+  margin: 0.5rem 0;
+}
+
+.event-date {
+  font-weight: bold;
+  color: #888;
+}
+
+.no-events {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #888;
+  margin-top: 2rem;
+}

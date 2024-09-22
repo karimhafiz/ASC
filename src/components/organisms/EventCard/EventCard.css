@@ -1,0 +1,86 @@
+.event-card {
+  display: flex;
+  align-items: flex-start;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+  transition: transform 0.2s ease-in-out;
+  font-family: "Arial", sans-serif;
+  color: #333;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.15);
+}
+
+.card-image {
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  flex-grow: 1;
+}
+
+.event-date {
+  font-size: 16px;
+  font-weight: bold;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.event-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.event-location {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.event-description {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.event-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.details-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.details-button:hover {
+  background-color: #0056b3;
+}

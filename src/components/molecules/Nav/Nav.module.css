@@ -1,0 +1,12 @@
+/* src/components/molecules/Nav/Nav.module.css */
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.navCloseButton {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}

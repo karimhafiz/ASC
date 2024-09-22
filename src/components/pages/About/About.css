@@ -1,0 +1,45 @@
+.about-us {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.mission,
+.vision {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.values,
+.history,
+.team {
+  margin-bottom: 3rem;
+}
+
+.values ul,
+.history ul,
+.team ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.values li,
+.history li,
+.team li {
+  margin-bottom: 1rem;
+}
+
+.team li img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}

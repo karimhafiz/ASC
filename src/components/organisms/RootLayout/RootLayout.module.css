@@ -1,0 +1,11 @@
+/* src/components/organisms/RootLayout/RootLayout.module.css */
+.rootLayout {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  min-height: 100vh;
+}
+
+.mainContent {
+  flex: 1;
+}
